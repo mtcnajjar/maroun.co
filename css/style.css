@@ -1,5 +1,10 @@
 #picture {
 	padding-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	
+	position:relative;
 }
 #header {
 	padding-top: 5%;
