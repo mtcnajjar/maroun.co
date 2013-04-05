@@ -9,29 +9,20 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
 	<link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" media="screen" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.vegas.css" />
-  
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.vegas.js"></script>
+	<link rel="stylesheet" type="text/css" href="/vegas/jquery.vegas.css" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/vegas/jquery.vegas.js"></script>
 	
 	<title>Maroun</title>
-	
 
 </head>
 <body>
 	<script> 
 		$( function() {
-			  $.vegas({
-			    src:'img/bg.jpg',
-			    load:function() {
-				    var img=$(this).attr('src');
-				    alert (img + ' is loaded');
-			    } 
-			  });
-			  $.vegas('overlay', {
-			    src:'/overlays/13.png'
-			  });
-		 }); 
+			$.vegas({src:'../img/bg.jpg', fade:500, loading:false})
+			('overlay', {src:'/vegas/overlays/1.png'});
+		}); 
 	</script>
 	<div class="container-fluid centered">
 
