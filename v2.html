@@ -4,13 +4,35 @@
 	<meta charset="utf-8" />
 	<!-- Bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
-	<link href="css/style2.css" rel="stylesheet" media="screen" type="text/css">
+	<link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" media="screen" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.vegas.css" />
+  
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.vegas.js"></script>
+	
 	<title>Maroun</title>
+	
+
 </head>
 <body>
+	<script> 
+		$( function() {
+			  $.vegas({
+			    src:'img/bg.jpg',
+			    load:function() {
+				    var img=$(this).attr('src');
+				    alert (img + ' is loaded');
+			    } 
+			  });
+			  $.vegas('overlay', {
+			    src:'/overlays/13.png'
+			  });
+		 }); 
+	</script>
 	<div class="container-fluid centered">
 
 		<div id="header" class="row-fluid">
