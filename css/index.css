@@ -1,0 +1,121 @@
+body {
+  background-color: #b02346;
+  font-family: "proxima-nova-soft", sans-serif;
+  font: normal 400 1em/1.50;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: #26C6FC;
+}
+
+a:hover {
+  color: #0C607D;
+}
+.oldsite {
+  color: rgb(38,198,252,0.58);
+}
+.bear {
+  display: block;
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 150px 0 0 41.4166666666%;
+  overflow: hidden;
+}
+
+.subtitle {
+  width: 52.8333333333%;
+  min-height: 17px;
+  margin: 416px auto 0;
+  line-height: 1.38;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  text-align: center;
+}
+
+._text {
+  width: 25.5833333333%;
+  min-height: 48px;
+  margin: 45px auto 0;
+  font: 400 0.875em/1.38 Helvetica;
+  color: rgba(255, 255, 255, 0.36);
+}
+
+.text-1 {
+  position: absolute;
+  top: 318px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font: 500 4em/1.38;
+  color: rgb(251, 248, 248);
+}
+
+.text-2 {
+  width: 39.1666666666%;
+  min-height: 44px;
+  margin: 50px auto 0;
+  color: rgb(255, 255, 255);
+}
+
+@media(max-width: 640px) {
+  .bear {
+    float: none;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .subtitle {
+    margin-top: 108px;
+  }
+
+  .text-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text-2 {
+    width: 66.40625%;
+  }
+}
+
+@media(max-width: 400px) {
+  body {
+    font-size: 1em;
+  }
+
+  .bear {
+    height: auto;
+  }
+
+  .subtitle {
+    width: 66.25%;
+    margin-top: 94px;
+  }
+
+  ._text {
+    width: 38%;
+  }
+
+  .text-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3.063em;
+  }
+
+  .text-2 {
+    width: 80%;
+    margin-top: 30px;
+  }
+}
